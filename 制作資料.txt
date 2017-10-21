@@ -1,14 +1,17 @@
-ŸŠJ”­ŠÂ‹«‚É‚Â‚¢‚Ä
-Eellipse
-EAndroid Studio
-EVisual Studio	©¡‰ñ‚Í‚±‚ê‚Ås‚¢‚½‚¢
+â—†é–‹ç™ºç’°å¢ƒã«ã¤ã„ã¦
+ãƒ»ellipse
+ãƒ»Android Studio â†ä»Šå›ã¯ã“ã‚Œã§è¡Œã„ãŸã„
+ãƒ»Visual Studio	
 
-ŸƒNƒƒXƒvƒ‰ƒbƒgƒtƒH[ƒ€‚É‚Â‚¢‚Ä
-VisualStudio‚Å‚ÍMonaca Xamarin‚ª‚ ‚é
+â—†ãƒ•ã‚£ãƒ«ã‚¿ãƒ¼ã«ã¤ã„ã¦
+Androidã‚‚ã‚«ãƒƒãƒˆã‚¤ãƒ³ã®ã‚ˆã†ãªã»ã‹ã‚¢ãƒ—ãƒªã®ä¸Šä¹—ã›ãŒå¯èƒ½
+IPhoneã‚‚å¯èƒ½ï¼Ÿï¼Ÿhttps://itunes.apple.com/jp/app/%E3%81%AE%E3%81%9E%E3%81%8D%E8%A6%8B%E9%98%B2%E6%AD%A2%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC/id644853683?mt=8
 
-ŸƒtƒBƒ‹ƒ^[‚É‚Â‚¢‚Ä
-Android‚àƒJƒbƒgƒCƒ“‚Ì‚æ‚¤‚È‚Ù‚©ƒAƒvƒŠ‚Ìãæ‚¹‚ª‰Â”\
-IPhone‚à‰Â”\HHhttps://itunes.apple.com/jp/app/%E3%81%AE%E3%81%9E%E3%81%8D%E8%A6%8B%E9%98%B2%E6%AD%A2%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC/id644853683?mt=8
-
-«android‚É‚æ‚éƒuƒ‹[ƒ‰ƒCƒg’áŒ¸ƒtƒBƒ‹ƒ^[
+â†“androidã«ã‚ˆã‚‹ãƒ–ãƒ«ãƒ¼ãƒ©ã‚¤ãƒˆä½æ¸›ãƒ•ã‚£ãƒ«ã‚¿ãƒ¼
 https://qiita.com/masaibar/items/658ed680b4bd44fdf85e
+
+â—†é€šçŸ¥ã«ã¤ã„ã¦
+android4.3ã‚ˆã‚Šé€šçŸ¥æ¬„ã‚’ç®¡ç†ã™ã‚‹ã“ã¨ãŒå¯èƒ½ã«ãªã£ãŸæ¨¡æ§˜ã€‚
+â†“NotificationListenerServiceã‚’ä½¿ã£ã¦ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒãƒ¼ã‚’ç›£è¦–ã™ã‚‹
+https://techbooster.org/android/ui/16546/
+
