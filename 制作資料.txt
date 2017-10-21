@@ -1,0 +1,14 @@
+◆開発環境について
+・ellipse
+・Android Studio
+・Visual Studio	←今回はこれで行いたい
+
+◆クロスプラットフォームについて
+VisualStudioではMonaca Xamarinがある
+
+◆フィルターについて
+Androidもカットインのようなほかアプリの上乗せが可能
+IPhoneも可能？？https://itunes.apple.com/jp/app/%E3%81%AE%E3%81%9E%E3%81%8D%E8%A6%8B%E9%98%B2%E6%AD%A2%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC/id644853683?mt=8
+
+↓androidによるブルーライト低減フィルター
+https://qiita.com/masaibar/items/658ed680b4bd44fdf85e
