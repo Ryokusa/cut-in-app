@@ -1,7 +1,5 @@
 ◆開発環境について
-・ellipse
 ・Android Studio ←今回はこれで行いたい
-・Visual Studio	
 
 ◆フィルターについて
 Androidもカットインのようなほかアプリの上乗せが可能
@@ -15,3 +13,12 @@ android4.3より通知欄を管理することが可能になった模様。
 ↓NotificationListenerServiceを使ってステータスバーを監視する
 https://techbooster.org/android/ui/16546/
 
+◆その他
+↓アプリの画面を遷移させる
+https://akira-watson.com/android/activity-1.html
+
+↓アラートダイアログにレイアウトを読み込ませる
+http://androidgamepark.blogspot.jp/2013/05/alertdialog-inflate.html
+
+↓インストール済みアプリケーションのアプリケーション名とアイコンを取得する
+https://techbooster.org/android/6353/
