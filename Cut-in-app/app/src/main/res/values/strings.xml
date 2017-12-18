@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Cut-in-app</string>
+    <string name="app_name">カットインアプリ</string>
+    <string name="select_text">カットインを設定したい項目を設定してください</string>
+    <string name="sel_name">イベント名:</string>
+    <string name="sel_app_name">アプリ名:</string>
+    <string-array name="event_entries">
+        <item>電池残量</item>
+        <item>ロック解除</item>
+        <item>アプリ通知</item>
+    </string-array>
 </resources>
