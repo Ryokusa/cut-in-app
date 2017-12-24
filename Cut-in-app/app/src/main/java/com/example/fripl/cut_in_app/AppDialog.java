@@ -7,19 +7,16 @@ import android.content.DialogInterface;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by fripl on 2017/12/18.
+ * アプリ選択ダイアログDialogFragment
  */
 
 public class AppDialog extends DialogFragment{
@@ -27,10 +24,14 @@ public class AppDialog extends DialogFragment{
     List<AppData> appDataList = new ArrayList<AppData>();
 
     @Override
-    public synchronized Dialog onCreateDialog(Bundle savedInstanceState)
+    public Dialog onCreateDialog(Bundle savedInstanceState)
     {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setTitle("テストダイアログ");
+        builder.setTitle("アプリ選択ダイアログ");
+
+        //progressDialog
+        DialogFragment progressDialog = new ProgressDialog();
+        progressDialog.show(getFragmentManager(), "progress");
 
         //アプリ情報取得
         PackageManager pm = getActivity().getPackageManager();
@@ -49,14 +50,20 @@ public class AppDialog extends DialogFragment{
         builder.setAdapter(adapter, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                MainActivity.selAppInfo = appInfoList.get(which);
+                //選択されたアプリの情報をセット
                 MainActivity.selAppData = appDataList.get(which);
+
+                //アプリ名とアイコンをそれぞれのコントロールにセット
                 MainActivity activity = (MainActivity)getActivity();
-                activity.onReturnDialog();  //戻り処理
+                TextView appName = (TextView)activity.findViewById(R.id.appName);
+                ImageView appIcon = (ImageView)activity.findViewById(R.id.appIcon);
+                appName.setText(appDataList.get(which).getAppName());
+                appIcon.setImageDrawable(appDataList.get(which).getIconDrawable());
             }
         });
 
 
+        progressDialog.dismiss();
         return builder.create();
     }
 

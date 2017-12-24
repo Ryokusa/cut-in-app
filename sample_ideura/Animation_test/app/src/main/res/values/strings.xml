@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Animation_test</string>
+    <string name="anim_button">Anim</string>
+    <string-array name="spinner1">
+        <item>回転</item>
+        <item>速くなる平行移動</item>
+        <item>遅くなる平行移動</item>
+        <item>平行移動</item>
+        <item>曲線移動</item>
+        <item>フェードイン</item>
+        <item>フェードアウト</item>
+    </string-array>
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ServiceAnimation</string>
+    <string name="service_start">サービス開始</string>
+    <string name="service_end">サービス終了</string>
+</resources>

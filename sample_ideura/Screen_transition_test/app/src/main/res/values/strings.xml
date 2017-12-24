@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Screen_transition_test</string>
+    <string name="description">画面遷移テスト</string>
+    <string name="transition1">画面２へ</string>
+    <string name="transition2">画面１へ</string>
+    <string name="back">戻る</string>
+</resources>

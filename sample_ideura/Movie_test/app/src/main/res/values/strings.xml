@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Movie_test</string>
+    <string name="description">動画再生テストだよ\nフォームに動画URL(.mpdなし)を入力してボタンで動作</string>
+</resources>
