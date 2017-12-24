@@ -9,8 +9,10 @@ import android.graphics.drawable.Drawable;
 public class AppData {
     private String appName;
     private Drawable iconDrawable;
+    private String packageName;
 
-    public AppData(String appName, Drawable iconDrawable){
+    public AppData(String packageName, String appName, Drawable iconDrawable){
+        this.packageName = packageName;
         this.appName = appName;
         this.iconDrawable = iconDrawable;
     }
@@ -34,5 +36,9 @@ public class AppData {
     {
         return this.iconDrawable;
     }
+
+    public void setPackageName(String packageName){ this.packageName = packageName; }
+    public String getPackageName(){return this.packageName; }
+
 
 }

@@ -1,18 +1,30 @@
 package com.example.fripl.cut_in_app;
 
+import android.app.Activity;
 import android.app.DialogFragment;
+import android.content.pm.ApplicationInfo;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
+import java.security.acl.LastOwnerException;
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
+    //Log用
+    private static final String TAG = "MainActivity";
+
     //選択された通知アプリの情報
     public static AppData selAppData;
 
@@ -83,13 +95,19 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    //アプリ読み込みタスク作成
+    final LoadAppInfoTask loadAppInfoTask = new LoadAppInfoTask(this);
     //アプリ選択ボタン処理
     private View.OnClickListener selAppButtonClick = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             //アプリ選択ダイアログ表示
-            DialogFragment selAppDialog = new AppDialog();
-            selAppDialog.show(getFragmentManager(), "selApp");
+            if (AppDialog.apploaded){   //アプリが読み込み済みなら表示
+                DialogFragment appDialog = new AppDialog();
+                appDialog.show(getFragmentManager(), "appDialog");
+            }else {                     //アプリがまだ読み込めてないなら読み込み・表示
+                loadAppInfoTask.execute(0);
+            }
         }
     };
 
