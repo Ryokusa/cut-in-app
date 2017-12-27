@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PropertyAnimTest</string>
+    <string name="sel_anim">アニメーションの種類を選択してください</string>
+    <string name="sel_interpolator">Interpolatorの種類を選択してください</string>
+    <string-array name="interpolators">
+        <item>AccelerateDecelerateInterpolator</item>
+        <item>AccelerateInterpolator</item>
+        <item>AnticipateInterpolator</item>
+        <item>AnticipateOvershootInterpolator</item>
+        <item>BounceInterpolator</item>
+        <item>CycleInterpolator</item>
+        <item>DecelerateInterpolator</item>
+        <item>LineaInterpolator</item>
+        <item>OvershootInterpolator</item>
+    </string-array>
+    <string name="play">再生</string>
+    <string name="decription">小さい●が始点、大きい●が終点です。タッチで動かして見てね</string>
+</resources>
