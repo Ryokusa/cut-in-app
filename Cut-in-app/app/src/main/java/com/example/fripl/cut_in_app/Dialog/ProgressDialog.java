@@ -1,4 +1,4 @@
-package com.example.fripl.cut_in_app;
+package com.example.fripl.cut_in_app.Dialog;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -25,6 +25,4 @@ public class ProgressDialog extends DialogFragment {
         builder.setView(progressBar);
         return builder.create();
     }
-
-
 }

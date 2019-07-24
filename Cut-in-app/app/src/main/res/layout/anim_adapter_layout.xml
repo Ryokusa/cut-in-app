@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/animName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:text="test"
+        android:textSize="24sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/animListView" />
+
+    <ListView
+        android:id="@+id/animListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/animName"
+        android:layout_below="@+id/animName" />
+
+    <ImageView
+        android:id="@+id/deleteAnimButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <ImageView
+        android:id="@+id/addAnimButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/deleteAnimButton"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <TextView
+        android:id="@+id/addHolderButton"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/animListView"
+        android:text="ここアニメーションホルダーを追加" />
+</RelativeLayout>

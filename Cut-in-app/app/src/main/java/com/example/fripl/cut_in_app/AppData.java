@@ -4,6 +4,7 @@ import android.graphics.drawable.Drawable;
 
 /**
  * Created by fripl on 2017/12/17.
+ * アプリの各種データ
  */
 
 public class AppData {

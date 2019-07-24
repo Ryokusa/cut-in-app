@@ -22,12 +22,14 @@ public class AppDataAdapter extends ArrayAdapter {
     private static class ViewFolder {   //独立したクラスとしてstatic
         TextView textView;
         ImageView imageView;
+        TextView haveCutIn;
 
         ViewFolder(View v)
         {
             //オブジェクト取得
             textView = (TextView)v.findViewById(R.id.textView);
-            imageView = (ImageView)v.findViewById(R.id.appIcon);
+            imageView = (ImageView)v.findViewById(R.id.cutInThumbnail);
+            haveCutIn = (TextView)v.findViewById(R.id.haveCutIn);
         }
     }
 
@@ -63,10 +65,19 @@ public class AppDataAdapter extends ArrayAdapter {
 
         //positionに格納されたアプリデータを取得
         AppData appData = (AppData)getItem(position);
+        Boolean haveCutIn = false;
+        if(CutInService.getCutInSetIndex(appData.getAppName()) != -1){
+            haveCutIn = true;
+        }
 
         //セット
         viewFolder.imageView.setImageDrawable(appData.getIconDrawable());
         viewFolder.textView.setText(appData.getAppName());
+        if(haveCutIn){
+            viewFolder.haveCutIn.setText("設定済み");
+        }else{
+            viewFolder.haveCutIn.setText("");
+        }
 
         return convertView;
     }

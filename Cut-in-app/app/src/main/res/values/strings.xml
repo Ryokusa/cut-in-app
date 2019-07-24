@@ -4,10 +4,54 @@
     <string name="sel_event_name">イベント名:</string>
     <string name="sel_app_name">アプリ名:</string>
     <string name="sel_app">アプリ選択</string>
+    <string name="control_cutin_menu">カットイン操作メニュー</string>
+    <string name="service_name">CutInService</string>
+
     <string-array name="event_entries">
         <item>電池残量</item>
+        <item>画面ON</item>
         <item>ロック解除</item>
         <item>アプリ通知</item>
     </string-array>
+    <string-array name="event_names">
+        <item>low_battery</item>
+        <item>screen_on</item>
+        <item>unlock</item>
+        <item>app_notification</item>
+    </string-array>
+
+    <string-array name="control_cutin_menu_items">
+        <item>動作カットインに設定</item>
+        <item>カットイン内容編集</item>
+        <item>カットイン内容削除</item>
+        <item>カットインタイトル変更</item>
+    </string-array>
     <string name="OK">OK</string>
+
+    <string-array name="object_type">
+        <item>画像</item>
+        <item>テキスト</item>
+    </string-array>
+
+    <string name="object_property">プロパティ</string>
+    <string name="object_animations">アニメーション</string>
+    <string name="text_value">テキスト内容</string>
+    <string name="image_value">使用画像</string>
+    <string name="layer_name">レイヤー名</string>
+
+    <string-array name="image_anim_type">
+        <item>移動</item>
+        <item>透明度</item>
+        <item>回転</item>
+        <item>拡大・縮小</item>
+    </string-array>
+
+    <string-array name="text_anim_type">
+        <item>移動</item>
+        <item>透明度</item>
+        <item>回転</item>
+        <item>テキストサイズ</item>
+    </string-array>
+
+    <string name="sel_cut_in">カットインを選択してください</string>
 </resources>

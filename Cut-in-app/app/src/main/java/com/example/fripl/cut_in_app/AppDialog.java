@@ -4,17 +4,16 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
-import android.app.FragmentManager;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
+
+import com.example.fripl.cut_in_app.Dialog.ProgressDialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,7 +31,7 @@ public class AppDialog extends DialogFragment{
     public Dialog onCreateDialog(Bundle savedInstanceState)
     {
         final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setTitle("アプリ選択ダイアログ");
+        builder.setTitle("アプリ選択");
 
         //アダプター作成
         AppDataAdapter adapter = new AppDataAdapter(builder.getContext(), 0, appDataList);
@@ -44,12 +43,9 @@ public class AppDialog extends DialogFragment{
                 //選択されたアプリの情報をセット
                 MainActivity.selAppData = appDataList.get(which);
 
-                //アプリ名とアイコンをそれぞれのコントロールにセット
+                //画面更新
                 MainActivity activity = (MainActivity)getActivity();
-                TextView appName = (TextView)activity.findViewById(R.id.appName);
-                ImageView appIcon = (ImageView)activity.findViewById(R.id.appIcon);
-                appName.setText(appDataList.get(which).getAppName());
-                appIcon.setImageDrawable(appDataList.get(which).getIconDrawable());
+                activity.reLoadScreen();
             }
         });
 
@@ -70,6 +66,7 @@ class LoadAppInfoTask extends AsyncTask<Integer, Integer, Integer>{
 
     @Override
     protected void onPreExecute(){
+        //読み込む前にプログレスダイアログ表示
         progressDialog = new ProgressDialog();
         progressDialog.show(activity.getFragmentManager(), "progress");
     }

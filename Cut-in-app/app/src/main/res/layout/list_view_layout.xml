@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/appIcon"
+        android:id="@+id/cutInThumbnail"
         android:layout_width="25dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -13,7 +13,13 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="237dp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/haveCutIn"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_weight="1" />
 </LinearLayout>
