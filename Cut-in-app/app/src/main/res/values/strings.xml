@@ -30,7 +30,6 @@
 
     <string-array name="object_type">
         <item>画像</item>
-        <item>テキスト</item>
     </string-array>
 
     <string name="object_property">プロパティ</string>
